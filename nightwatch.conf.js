@@ -1,5 +1,6 @@
 var CLI_CONFIGURATION = {
-	"webdriver.gecko.driver": "bin/geckodriver.exe"
+	"webdriver.gecko.driver": "bin/geckodriver.exe",
+	"webdriver.chrome.driver": "bin/chromedriver.exe"
 }
 var SELENIUM_CONFIGURATION = {
 	start_process: true,
@@ -15,11 +16,17 @@ var FIREFOX_CONFIGURATION = {
 	acceptSslCerts: true
 };
 
+var CHROME_CONFIGURATION = {
+	browserName: 'chrome',
+	javascriptEnabled: true,
+	acceptSslCerts: true
+};
+
 var DEFAULT_CONFIGURATION = {
 	launch_url: 'http://localhost',
 	selenium_port: 4444,
 	selenium_host: 'localhost',
-	desiredCapabilities: FIREFOX_CONFIGURATION
+	desiredCapabilities: CHROME_CONFIGURATION
 };
 
 var ENVIRONMENTS = {

@@ -2,6 +2,7 @@
 module.exports = {
 	'No Tracking Test': function (client) {
 		client
+			.timeoutsAsyncScript(10000)
 			.url('http://pre-cdn.awadserver.com/templates/13/fas-track.html?make=Tesla&model=Model-X&zipcode=90210')
 			.executeAsync(function (done) {
 				/*TODO: move the following funtion to a command*/
