@@ -19,7 +19,10 @@ var FIREFOX_CONFIGURATION = {
 var CHROME_CONFIGURATION = {
 	browserName: 'chrome',
 	javascriptEnabled: true,
-	acceptSslCerts: true
+	acceptSslCerts: true,
+	chromeOptions:{
+		args: ["test-type"]
+	}
 };
 
 var DEFAULT_CONFIGURATION = {
