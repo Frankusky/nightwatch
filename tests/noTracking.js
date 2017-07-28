@@ -6,10 +6,10 @@ module.exports = {
 			.url('http://pre-cdn.awadserver.com/templates/13/fas-track.html?make=Tesla&model=Model-X&zipcode=90210')
 			.executeAsync(function (done) {
 				/*TODO: move the following funtion to a command*/
-				let tries = 0,
+				var tries = 0,
 					intervalCheck = 0;
 				intervalCheck = setInterval(function () {
-					performance.getEntriesByType("resource").find((el) => {
+					performance.getEntriesByType("resource").forEach(function (el) {
 						if (el.name.indexOf("Ads/Listings") >= 0) {
 							clearInterval(intervalCheck);
 							done(el.name);
@@ -25,10 +25,10 @@ module.exports = {
 			.url("http://pre-cdn.awadserver.com/templates/13/fas-track.html?make=Tesla&model=Model-X&zipcode=90210&aw-track=0")
 			.executeAsync(function (done) {
 				/*TODO: move the following funtion to a command*/
-				let tries = 0,
+				var tries = 0,
 					intervalCheck = 0;
 				intervalCheck = setInterval(function () {
-					performance.getEntriesByType("resource").find((el) => {
+					performance.getEntriesByType("resource").forEach(function (el) {
 						if (el.name.indexOf("Ads/Listings") >= 0) {
 							clearInterval(intervalCheck);
 							done(el.name);
@@ -44,10 +44,10 @@ module.exports = {
 			.url("http://pre-cdn.awadserver.com/templates/13/fas-track.html?make=Tesla&model=Model-X&zipcode=90210&aw-track=1")
 			.executeAsync(function (done) {
 				/*TODO: move the following funtion to a command*/
-				let tries = 0,
+				var tries = 0,
 					intervalCheck = 0;
 				intervalCheck = setInterval(function () {
-					performance.getEntriesByType("resource").find((el) => {
+					performance.getEntriesByType("resource").forEach(function (el) {
 						if (el.name.indexOf("Ads/Listings") >= 0) {
 							clearInterval(intervalCheck);
 							done(el.name);

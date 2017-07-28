@@ -29,15 +29,14 @@ var CHROME_CONFIGURATION = {
 var EDGE_CONFIGURATION = {
 	browserName: 'internet explorer',
 	javascriptEnabled: true,
-	acceptSslCerts: true,
-	ignoreProtectedModeSettings : true
+	acceptSslCerts: true
 };
 
 var DEFAULT_CONFIGURATION = {
 	launch_url: 'http://localhost',
 	selenium_port: 4444,
 	selenium_host: 'localhost',
-	desiredCapabilities: CHROME_CONFIGURATION
+	desiredCapabilities: EDGE_CONFIGURATION
 };
 
 var ENVIRONMENTS = {
