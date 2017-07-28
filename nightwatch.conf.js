@@ -1,6 +1,7 @@
 var CLI_CONFIGURATION = {
 	"webdriver.gecko.driver": "bin/geckodriver.exe",
-	"webdriver.chrome.driver": "bin/chromedriver.exe"
+	"webdriver.chrome.driver": "bin/chromedriver.exe",
+	"webdriver.ie.driver": "bin/IEDriverServer.exe"
 }
 var SELENIUM_CONFIGURATION = {
 	start_process: true,
@@ -21,8 +22,15 @@ var CHROME_CONFIGURATION = {
 	javascriptEnabled: true,
 	acceptSslCerts: true,
 	chromeOptions:{
-		args: ["test-type"]
+		args: ["test-type","create-browser-on-startup-for-tests"]
 	}
+};
+
+var EDGE_CONFIGURATION = {
+	browserName: 'internet explorer',
+	javascriptEnabled: true,
+	acceptSslCerts: true,
+	ignoreProtectedModeSettings : true
 };
 
 var DEFAULT_CONFIGURATION = {
@@ -33,7 +41,9 @@ var DEFAULT_CONFIGURATION = {
 };
 
 var ENVIRONMENTS = {
-	default: DEFAULT_CONFIGURATION
+	default: DEFAULT_CONFIGURATION,
+	chrome: CHROME_CONFIGURATION,
+	firefox: FIREFOX_CONFIGURATION
 };
 
 module.exports = {
