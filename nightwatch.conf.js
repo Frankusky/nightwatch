@@ -1,3 +1,7 @@
+require('nightwatch-cucumber')({
+	cucumberArgs: ['--require', 'timeout.js', '--require', 'step_definitions', '--format', 'pretty', '--format', 'json:reports/cucumber.json', 'features']
+})
+
 var CLI_CONFIGURATION = {
 	"webdriver.gecko.driver": "bin/geckodriver.exe",
 	"webdriver.chrome.driver": "bin/chromedriver.exe",
@@ -46,8 +50,9 @@ var ENVIRONMENTS = {
 };
 
 module.exports = {
-	src_folders: ['tests'],
+//	src_folders: ['tests'],
 	selenium: SELENIUM_CONFIGURATION,
 	test_settings: ENVIRONMENTS,
-	custom_assertions_path: ['custom-assertions']
+//	custom_assertions_path: ['custom-assertions'],
+//	custom_commands_path: ['commands']
 };

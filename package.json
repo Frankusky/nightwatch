@@ -4,13 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-	  "test": "nightwatch.cmd"
+    "test": "nightwatch.cmd"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nightwatch": "^0.9.16"
+    "cucumber": "^2.3.1",
+    "nightwatch": "^0.9.16",
+    "nightwatch-cucumber": "^7.1.11",
+    "nightwatch-cucumber-editor": "^1.0.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "nightwatch-cucumber": "^7.1.11"
+  }
 }
