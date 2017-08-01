@@ -16,43 +16,53 @@ var SELENIUM_CONFIGURATION = {
 };
 
 var FIREFOX_CONFIGURATION = {
-	browserName: 'firefox',
-	javascriptEnabled: true,
-	acceptSslCerts: true
+	launch_url: 'http://localhost',
+	selenium_port: 4444,
+	selenium_host: 'localhost',
+	desiredCapabilities: {
+		browserName: 'firefox',
+		javascriptEnabled: true,
+		acceptSslCerts: true
+	}
 };
 
 var CHROME_CONFIGURATION = {
-	browserName: 'chrome',
-	javascriptEnabled: true,
-	acceptSslCerts: true,
-	chromeOptions:{
-		args: ["test-type","create-browser-on-startup-for-tests"]
+	launch_url: 'http://localhost',
+	selenium_port: 4444,
+	selenium_host: 'localhost',
+	desiredCapabilities: {
+		browserName: 'chrome',
+		javascriptEnabled: true,
+		acceptSslCerts: true,
+		chromeOptions: {
+			args: ["test-type", "create-browser-on-startup-for-tests"]
+		}
 	}
 };
 
 var EDGE_CONFIGURATION = {
-	browserName: 'internet explorer',
-	javascriptEnabled: true,
-	acceptSslCerts: true
-};
-
-var DEFAULT_CONFIGURATION = {
 	launch_url: 'http://localhost',
 	selenium_port: 4444,
 	selenium_host: 'localhost',
-	desiredCapabilities: EDGE_CONFIGURATION
+	desiredCapabilities: {
+		browserName: 'internet explorer',
+		javascriptEnabled: true,
+		acceptSslCerts: true
+	}
 };
 
 var ENVIRONMENTS = {
-	default: DEFAULT_CONFIGURATION,
+	default: CHROME_CONFIGURATION,
 	chrome: CHROME_CONFIGURATION,
-	firefox: FIREFOX_CONFIGURATION
+	firefox: FIREFOX_CONFIGURATION,
+	edge: EDGE_CONFIGURATION
 };
 
 module.exports = {
-//	src_folders: ['tests'],
 	selenium: SELENIUM_CONFIGURATION,
 	test_settings: ENVIRONMENTS,
-//	custom_assertions_path: ['custom-assertions'],
-//	custom_commands_path: ['commands']
+	/*Optimizations Testing, nothing works :(*/
+	//		"globals_path": "nightwatch.global.js",
+	//	custom_assertions_path: ['custom-assertions'],
+	//	custom_commands_path: ['commands']
 };

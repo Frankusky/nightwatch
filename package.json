@@ -10,12 +10,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "browsermob-proxy": "^1.0.9",
     "cucumber": "^2.3.1",
+    "mocha-gherkin": "github:mklabs/mocha-gherkin",
     "nightwatch": "^0.9.16",
-    "nightwatch-cucumber": "^7.1.11",
-    "nightwatch-cucumber-editor": "^1.0.1"
-  },
-  "dependencies": {
     "nightwatch-cucumber": "^7.1.11"
-  }
+  },
+  "dependencies": {}
 }
