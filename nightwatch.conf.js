@@ -1,5 +1,5 @@
 require('nightwatch-cucumber')({
-	cucumberArgs: ['--require', 'timeout.js', '--require', 'step_definitions', '--format', 'pretty', '--format', 'json:reports/cucumber.json', 'features']
+	cucumberArgs: ['--require', 'timeout.js','--require', 'hooks.js','--require', 'step_definitions', '--format', 'pretty', '--format', 'json:reports/cucumber.json', 'features']
 })
 
 var CLI_CONFIGURATION = {
