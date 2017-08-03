@@ -16,18 +16,24 @@ var SELENIUM_CONFIGURATION = {
 };
 
 var FIREFOX_CONFIGURATION = {
-	launch_url: 'http://localhost',
+	launch_url: 'data:,',
 	selenium_port: 4444,
-	selenium_host: 'localhost',
+	selenium_host: '127.0.0.1',
 	desiredCapabilities: {
 		browserName: 'firefox',
 		javascriptEnabled: true,
-		acceptSslCerts: true
+		acceptSslCerts: true,
+		marionette: true
+	},
+	proxy:{
+		"host": "127.0.0.1",
+		"port":"8080",
+		"protocol": "http"
 	}
 };
 
 var CHROME_CONFIGURATION = {
-	launch_url: 'http://localhost',
+	launch_url: 'data:,',
 	selenium_port: 4444,
 	selenium_host: 'localhost',
 	desiredCapabilities: {
@@ -35,13 +41,14 @@ var CHROME_CONFIGURATION = {
 		javascriptEnabled: true,
 		acceptSslCerts: true,
 		chromeOptions: {
-			args: ["test-type", "create-browser-on-startup-for-tests"]
-		}
+			args: ["test-type", "create-browser-on-startup-for-tests",'proxy-server="localhost:8080"',"proxy-bypass-list"]
+		},
+		marionette: true
 	}
 };
 
 var EDGE_CONFIGURATION = {
-	launch_url: 'http://localhost',
+	launch_url: 'data:,',
 	selenium_port: 4444,
 	selenium_host: 'localhost',
 	desiredCapabilities: {
