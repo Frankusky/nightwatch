@@ -24,11 +24,6 @@ var FIREFOX_CONFIGURATION = {
 		javascriptEnabled: true,
 		acceptSslCerts: true,
 		marionette: true
-	},
-	proxy:{
-		"host": "127.0.0.1",
-		"port":"8080",
-		"protocol": "http"
 	}
 };
 
@@ -41,9 +36,8 @@ var CHROME_CONFIGURATION = {
 		javascriptEnabled: true,
 		acceptSslCerts: true,
 		chromeOptions: {
-			args: ["test-type", "create-browser-on-startup-for-tests",'proxy-server="localhost:8080"',"proxy-bypass-list"]
-		},
-		marionette: true
+			args: ["test-type", "create-browser-on-startup-for-tests",'--proxy-server=127.0.0.1:8080']
+		}
 	}
 };
 
