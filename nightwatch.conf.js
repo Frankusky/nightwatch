@@ -5,7 +5,8 @@ require('nightwatch-cucumber')({
 var CLI_CONFIGURATION = {
 	"webdriver.gecko.driver": "bin/geckodriver.exe",
 	"webdriver.chrome.driver": "bin/chromedriver.exe",
-	"webdriver.ie.driver": "bin/IEDriverServer.exe"
+	"webdriver.ie.driver": "bin/IEDriverServer.exe",
+  "webdriver.firefox.profile" : "nightwatch"
 }
 var SELENIUM_CONFIGURATION = {
 	start_process: true,
@@ -23,7 +24,7 @@ var FIREFOX_CONFIGURATION = {
 		browserName: 'firefox',
 		javascriptEnabled: true,
 		acceptSslCerts: true,
-		marionette: true
+		marionette: false
 	}
 };
 
@@ -53,7 +54,7 @@ var EDGE_CONFIGURATION = {
 };
 
 var ENVIRONMENTS = {
-	default: CHROME_CONFIGURATION,
+//	default: CHROME_CONFIGURATION,
 	chrome: CHROME_CONFIGURATION,
 	firefox: FIREFOX_CONFIGURATION,
 	edge: EDGE_CONFIGURATION
