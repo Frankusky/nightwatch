@@ -1,0 +1,31 @@
+{
+   "description": "The latest not-superhero out there: give it up for Deadpool!",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmanKOrwFVFtM14TOrntqJ7qarRXVTGRLYdd+jsnt1GwEF3s1bnA4TYh8FglD5Q6LeAncw7dd4/eNHmn6nPR/pQylO3Qk9idajH3ct4DWZhubSpHciNVtU50XpMPs5T+z7Oqp2GKiGHkC7IMG637hI6RZAVCMekGny4dcmGH2FTYPuD6RjgAAElfyxp3mjMTf4Af/xc1snIEcbJ42rrrwqpcVlTKREbyqa+wpuPYwPE6PKzgJvcet5CFCUPek2Ud5KRDw5vqOJo7e0dKC9UBqESd0XUOo9fn20MxZ3g2aNC2A+p75hzHtsKtJe4pTF2lBGzB+Ri6AYMHjco75jX0U1wIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "2.25.0.0",
+   "name": "Deadpool Full Screen Theme",
+   "theme": {
+      "colors": {
+         "bookmark_text": [ 255, 255, 255 ],
+         "frame": [ 203, 36, 43 ],
+         "tab_background_text": [ 0, 0, 0 ],
+         "tab_text": [ 255, 255, 255 ],
+         "toolbar": [ 203, 36, 43 ]
+      },
+      "images": {
+         "theme_frame": "images/theme_frame.png",
+         "theme_ntp_background": "images/bg.jpg",
+         "theme_tab_background": "images/theme_tab_background.png",
+         "theme_toolbar": "images/theme_toolbar.png"
+      },
+      "properties": {
+         "ntp_background_alignment": "bottom",
+         "ntp_background_repeat": "no-repeat"
+      },
+      "tints": {
+         "buttons": [ 0, 0, 0.65 ]
+      }
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.0.0"
+}

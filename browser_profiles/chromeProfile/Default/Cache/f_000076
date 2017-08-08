@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<!--<![endif]-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>How to change or disable your proxy in Chrome | ExpressVPN</title>
+  <link rel="profile" href="http://gmpg.org/xfn/11">
+  <link rel="pingback" href="https://www.expressvpn.com/support/xmlrpc.php">
+  <link rel="shortcut icon" href="https://23429-presscdn-pagely.netdna-ssl.com/wp-content/themes/xvsupport/favicon.ico" />
+  <!--[if lt IE 9]>
+  <script src="https://23429-presscdn-pagely.netdna-ssl.com/wp-content/themes/twentythirteen/js/html5.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" media="screen" href="https://23429-presscdn-pagely.netdna-ssl.com/wp-content/themes/xvsupport/css/support.css?v=2.1.2">
+  <script src="https://23429-presscdn-pagely.netdna-ssl.com/wp-content/themes/xvsupport/js/jquery.min.js"></script>
+  <script src="https://23429-presscdn-pagely.netdna-ssl.com/wp-content/themes/xvsupport/js/detectizr.js"></script>
+  <script src="https://23429-presscdn-pagely.netdna-ssl.com/wp-content/themes/xvsupport/js/modernizr.js"></script>
+  <script src="//www.google-analytics.com/cx/api.js?experiment=7hQgcSGlQHW6Lc9mBbybxQ"></script>
+  <script type="text/javascript">
+    var versionVariation = [
+      function(){
+        document.getElementById("new_setup").remove();
+        document.getElementById("orig_setup").classList.remove("hide");
+      },
+      function(){
+        document.getElementById("orig_setup").remove();
+        document.getElementById("new_setup").classList.remove("hide");
+      }
+    ]
+    var chosenVariation = cxApi.chooseVariation();
+    $(document).ready(function () {
+      versionVariation[chosenVariation]();
+    });
+  </script>
+  <script type="text/javascript" src="https://23429-presscdn-pagely.netdna-ssl.com/wp-content/themes/xvsupport/js/setup.js?v=2.1"></script>
+  
+<!-- This site is optimized with the Yoast SEO plugin v5.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Follow this step-by-step guide to disable the proxy in Chrome."/>
+<link rel="canonical" href="https://www.expressvpn.com/support/troubleshooting/google-chrome-no-proxy/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="How to change or disable your proxy in Chrome | ExpressVPN" />
+<meta property="og:description" content="Follow this step-by-step guide to disable the proxy in Chrome." />
+<meta property="og:url" content="https://www.expressvpn.com/support/troubleshooting/google-chrome-no-proxy/" />
+<meta property="og:site_name" content="ExpressVPN Customer Support" />
+<meta property="article:publisher" content="https://www.facebook.com/expressvpn/" />
+<meta property="article:section" content="Disable Proxy" />
+<meta property="article:published_time" content="2015-11-01T09:40:43+00:00" />
+<meta property="article:modified_time" content="2017-08-02T08:38:41+00:00" />
+<meta property="og:updated_time" content="2017-08-02T08:38:41+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Follow this step-by-step guide to disable the proxy in Chrome." />
+<meta name="twitter:title" content="How to change or disable your proxy in Chrome | ExpressVPN" />
+<meta name="twitter:site" content="@expressvpn" />
+<meta name="twitter:image" content="https://www.expressvpn.com/support/wp-content/uploads/2015/11/chrome-settings-menu-windows.png" />
+<meta name="twitter:creator" content="@expressvpn" />
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='stylesheet' id='thumbs_rating_styles-css'  href='https://23429-presscdn-pagely.netdna-ssl.com/wp-content/plugins/thumbs-rating/css/style.css?ver=2.0.4' type='text/css' media='all' />
+<link rel='stylesheet' id='wpns-style-css'  href='https://23429-presscdn-pagely.netdna-ssl.com/wp-content/themes/xvsupport/include/ajax-search/assist/css/style.min.css?ver=1.0.4' type='text/css' media='all' />
+<link rel='stylesheet' id='wpns-fontawesome-css'  href='https://23429-presscdn-pagely.netdna-ssl.com/wp-content/themes/xvsupport/include/ajax-search/assist/css/font-awesome.min.css?ver=1.0.4' type='text/css' media='all' />
+<link rel='stylesheet' id='twentythirteen-fonts-css'  href='https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C400%2C700%2C300italic%2C400italic%2C700italic%7CBitter%3A400%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='https://23429-presscdn-pagely.netdna-ssl.com/wp-content/themes/twentythirteen/genericons/genericons.css?ver=3.03' type='text/css' media='all' />
+<link rel='stylesheet' id='xvsupport-css'  href='https://23429-presscdn-pagely.netdna-ssl.com/wp-content/themes/xvsupport/style.css?ver=3.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://23429-presscdn-pagely.netdna-ssl.com/wp-content/themes/xvsupport/include/ajax-search/assist/js/spin.min.js?ver=4.8.1'></script>
+<script type='text/javascript' src='https://23429-presscdn-pagely.netdna-ssl.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://23429-presscdn-pagely.netdna-ssl.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var thumbs_rating_ajax = {"ajax_url":"\/support\/wp-admin\/admin-ajax.php","nonce":"6e0dd6ab02"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://23429-presscdn-pagely.netdna-ssl.com/wp-content/plugins/thumbs-rating/js/general.js?ver=4.0.8'></script>
+<script type='text/javascript' src='https://23429-presscdn-pagely.netdna-ssl.com/wp-content/plugins/wp-hide-post/public/js/wp-hide-post-public.js?ver=2.0.10'></script>
+<link rel='https://api.w.org/' href='https://support.expressvpn.com/wp-json/' />
+<link rel="alternate" type="application/json+oembed" href="https://support.expressvpn.com/wp-json/oembed/1.0/embed?url=%2Fsupport%2Ftroubleshooting%2Fgoogle-chrome-no-proxy%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://support.expressvpn.com/wp-json/oembed/1.0/embed?url=%2Fsupport%2Ftroubleshooting%2Fgoogle-chrome-no-proxy%2F&#038;format=xml" />
+<link rel="alternate" type="application/rss+xml" title="ExpressVPN Customer Support &raquo; Feed" href="https://www.expressvpn.com/support/feed/" /><link rel="alternate" type="application/rss+xml" title="ExpressVPN Customer Support &raquo; Comments Feed" href="https://www.expressvpn.com/support/comments/feed/" /><link rel="alternate" type="application/rss+xml" title="ExpressVPN Customer Support &raquo; How to disable your proxy in Chrome Comments Feed" href="https://www.expressvpn.com/support/troubleshooting/google-chrome-no-proxy/feed/" />
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-8164236-1', 'auto');
+  
+  var ppi_pattern = /([?=&]*)[^=?&\s]+(?:@|%40)[^=?&\s]+\.[^=?&\s]+([?=&]*)/g;
+  if(location.search.match(ppi_pattern)){
+      ga('set', 'location', location.href.replace(ppi_pattern, "$1" + "[FILTERED]" + "$2"));
+  }
+  ga('send', 'pageview');
+
+</script>		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+			<style type="text/css" id="twentythirteen-header-css">
+			.site-header {
+			background: url(https://23429-presscdn-pagely.netdna-ssl.com/wp-content/themes/twentythirteen/images/headers/circle.png) no-repeat scroll top;
+			background-size: 1600px auto;
+		}
+		@media (max-width: 767px) {
+			.site-header {
+				background-size: 768px auto;
+			}
+		}
+		@media (max-width: 359px) {
+			.site-header {
+				background-size: 360px auto;
+			}
+		}
+		</style>
+	<link rel="amphtml" href="/support/troubleshooting/google-chrome-no-proxy/amp/" />  <script src="https://23429-presscdn-pagely.netdna-ssl.com/wp-content/themes/xvsupport/js/scripts.js?v=1.2.9"></script>
+</head>
+
+<body class="post-template-default single single-post postid-73 single-format-standard">
+  <script type="text/javascript">
+  var evpnGetCookie = function(name,value) {
+    if(document.cookie.indexOf(name) == 0)
+      return -1<document.cookie.indexOf(value?name+"="+value+";":name+"=")
+    else if(value && document.cookie.indexOf("; "+name+"="+value) + name.length + value.length + 3== document.cookie.length) //match without an ending ';' if its the last
+      return true
+    else {
+      return -1<document.cookie.indexOf("; "+(value?name+"="+value + ";":name+"="))
+    }
+  };
+
+  var evpnIsLoggedIn = function() {
+    return evpnGetCookie('xv_ue');
+  };
+
+  if(evpnIsLoggedIn())
+    jQuery('body').addClass('evpn_logged_in');
+
+  var evpnTrackLinkInGA = function(category, action, label, url) {
+    ga('send', 'event', category, action, label, {
+      'transport': 'beacon',
+      'hitCallback': function(){document.location = url;}
+    });
+  };
+  </script>
+
+  <div id="page" class="hfeed site">
+        <header class="header" id="master">
+          <nav class='navbar navbar-default' role='navigation'>
+            <div class='container cf'>
+              <div class="navbar-header cf">
+                <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+                  <span class="sr-only"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a href="/" class="logo"><img alt="Get ExpressVPN" height="36" src="https://23429-presscdn-pagely.netdna-ssl.com/wp-content/themes/xvsupport/images/expressvpn.png" /></a>
+              </div>
+
+              <div class="collapse navbar-collapse cf">
+
+                    <ul class="nav navbar-nav navbar-right cf">
+                      <li class="dropdown">
+                        <a class="dropdown-toggle" id="tour-dropdown" href="/what-is-vpn">Take a tour
+                          <b class="caret"></b>
+                        </a>
+                        <ul aria-labelledby="tour-dropdown" class="dropdown-menu dropdown-menu-left left-pointer">
+                          <li>
+                            <a href="/what-is-vpn">What is VPN?</a>
+                          </li>
+                          <li class="divider" role="separator"></li>
+                          <li>
+                            <a href="/what-is-vpn/browse-anonymously">Browse Anonymously</a>
+                          </li>
+                          <li>
+                            <a href="/what-is-vpn/hide-ip-address">Hide Your IP</a>
+                          </li>
+                          <li>
+                            <a href="/what-is-vpn/unblock-websites">Unblock Websites</a>
+                          </li>
+                          <li>
+                            <a href="/what-is-vpn/vpn-speed-test">VPN Speed Test</a>
+                          </li>
+                          <li>
+                            <a href="/what-is-vpn/logless-vpn">No Log VPN</a>
+                          </li>
+                          <li>
+                            <a href="/what-is-vpn/vpn-encryption">VPN Encryption</a>
+                          </li>
+                          <li>
+                            <a href="/what-is-vpn/protocols">All VPN Protocols</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a class="dropdown-toggle" id="apps-dropdown" href="/vpn-software">VPN Apps
+                          <b class="caret"></b>
+                        </a>
+                        <ul aria-labelledby="apps-dropdown" class="dropdown-menu dropdown-menu-left left-pointer">
+                          <li>
+                            <a href="/vpn-software">All VPN Software</a>
+                          </li>
+                          <li class="divider" role="separator"></li>
+                          <li>
+                            <a href="/vpn-software/vpn-windows">Windows</a>
+                          </li>
+                          <li>
+                            <a href="/vpn-software/vpn-mac">Mac</a>
+                          </li>
+                          <li>
+                            <a href="/vpn-software/vpn-android">Android</a>
+                          </li>
+                          <li>
+                            <a href="/vpn-software/vpn-ios">iOS</a>
+                          </li>
+                          <li>
+                            <a href="/vpn-software/vpn-iphone">iPhone</a>
+                          </li>
+                          <li>
+                            <a href="/vpn-software/vpn-ipad">iPad</a>
+                          </li>
+                          <li>
+                            <a href="/vpn-software/vpn-linux">Linux</a>
+                          </li>
+                          <li class="divider" role="separator"></li>
+                          <li>
+                            <a href="/vpn-software/vpn-router">Router</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="/contact">Support</a>
+                      </li>
+                      <li>
+                        <a href="/blog">Blog</a>
+                      </li>
+                      <li>
+                        <a class="login" href="/users/sign_in">My Account</a>
+                      </li>
+                      <li class="list-cta ">
+                        <a href="/order" class="btn-get btn btn-danger evpn_hide_logged_in" id="header_get_expressvpn">
+                          <img alt="" class="download-icon" height="14" src="https://23429-presscdn-pagely.netdna-ssl.com/wp-content/themes/xvsupport/images/icon-download-expressvpn.png" width="14" />
+                          Get ExpressVPN Now
+                        </a>
+
+                        <a href="/refer" class="btn-get btn btn-danger evpn_show_logged_in" onclick="evpnTrackLinkInGA('Navigation', 'Refer Friend', 'Only logins see button', this.getAttribute('href'))">
+                          Refer Friends
+                        </a>
+                      </li>
+                    </ul>
+                </div>
+              </div>
+          </nav>
+        </header>
+
+  <div id="main" class="cf">
+
+	<div id="primary" class="tutorial_page support_v3">
+
+		<!-- Jumbotron -->
+		<div class="dark-jumbotron">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+													<p class="h2">Troubleshooting</p>
+							<p>Guides if you need help setting up or connecting with ExpressVPN.</p>
+											</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- breadcrumbs -->
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+			<p id="breadcrumbs" class="tleft">
+				<a href="/">
+					<i class="fa fa-home"></i>
+				</a>
+				/
+				<span xmlns:v="http://rdf.data-vocabulary.org/#"><span typeof="v:Breadcrumb"><a href="/support/" rel="v:url" property="v:title">Support</a> / <span rel="v:child" typeof="v:Breadcrumb"><a href="/support/troubleshooting/" rel="v:url" property="v:title">Troubleshooting</a> / <span class="breadcrumb_last">How to disable proxy for Chrome</span></span></span></span>			</p>
+		</div>
+	</div>
+</div>
+
+		<div class="container single cf">
+			<div class="main-content">
+													
+<article id="post-73" class="post-73 post type-post status-publish format-standard hentry category-disable-proxy">
+	<header class="entry-header">
+
+					<h1 class="entry-title">How to disable your proxy in Chrome</h1>
+		
+	</header><!-- .entry-header -->
+
+			<div class="entry-content">
+		<div class="entry-meta">
+			<p><em>Last updated: <time datetime="2017-08-02">August 2, 2017</time></em></p>
+					</div>
+				<div class="top-callout cf">
+							<div class="imgContainer">
+					<img width="177" height="88" src="https://23429-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2017/03/stuck-need-help.png" class="attachment-callout-div size-callout-div" alt="stuck need help" />				</div>
+						<div class="callout-text">
+				<h3>Too frustrated to read this page?</h3>
+				<a class="callout-btn" href="#open-chat">Talk to a human</a>
+			</div>
+		</div>
+				<p id="top">A proxy server is an intermediary between your computer and the Internet, often used to hide your real location and allow you to access websites that would otherwise be blocked. However, not all proxies offer the <a href="https://www.expressvpn.com/internet-security/proxy" target="_blank" rel="noopener noreferrer">same privacy protections as a VPN</a>. When you&#8217;re using ExpressVPN, you don&#8217;t need an additional proxy running.</p>
+<p>If you&#8217;re having trouble connecting to the Internet, it&#8217;s possible that it has been set to use a proxy server.</p>
+<section class="callout"><strong>Note: </strong>The steps below will not help you access online streaming services. If you&#8217;re unable to access a service because a VPN or proxy is detected, please <a class="contactSupportLink" href="#">contact the ExpressVPN Support Team for immediate assistance</a>.</section>
+<p>For instructions on how to disable your proxy in Chrome, please refer to the section appropriate to your machine.</p>
+<div id="youtube_vzaar_container"><iframe src="https://www.youtube.com/embed/qbRiXE-bjC8" class="youtube-iframe" width="100%" height="350px" frameborder="0" allowfullscreen="allowfullscreen"></iframe><iframe src="//view.vzaar.com/11046737/player" class="vzaar-iframe" width="100%" height="350px" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+<div id="youtube_vzaar_container"><iframe src="https://www.youtube.com/embed/qquoorMFLYo" class="youtube-iframe" width="100%" height="350px" frameborder="0" allowfullscreen="allowfullscreen"></iframe><iframe src="//view.vzaar.com/11046672/player" class="vzaar-iframe" width="100%" height="350px" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+<section class="callout">
+<h4>I am on&#8230;</h4>
+<p><a href="#windows">Windows</a><br />
+<a href="#mac">Mac</a></p>
+</section>
+<hr />
+<h2 id="windows">Disable proxy for Chrome on Windows</h2>
+<ol>
+<li>Click on the <strong>Chrome Menu</strong> in the browser toolbar.<br />
+<img class="aligncenter size-full wp-image-2430" src="https://23429-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2015/11/chrome-settings-menu-windows.png" alt="Chrome settings menu Windows" width="278" height="135" srcset="https://23429-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2015/11/chrome-settings-menu-windows.png 278w, https://23429-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2015/11/chrome-settings-menu-windows-177x86.png 177w" sizes="(max-width: 278px) 100vw, 278px" /></li>
+<li>Select <strong>Settings</strong>.<br />
+<img class="aligncenter size-full wp-image-2431" src="https://23429-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2015/11/chrome-settings-windows.png" alt="Chrome settings Windows" width="283" height="422" srcset="https://23429-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2015/11/chrome-settings-windows.png 283w, https://23429-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2015/11/chrome-settings-windows-201x300.png 201w, https://23429-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2015/11/chrome-settings-windows-59x88.png 59w" sizes="(max-width: 283px) 100vw, 283px" /></li>
+<li>Click <strong>Advanced</strong>.<br />
+<img class="aligncenter size-full wp-image-2432" src="https://23429-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2015/11/chrome-settings-advanced.png" alt="click Advanced" width="148" height="73" /></li>
+<li>In the &#8220;System&#8221; section, click <strong>Open proxy settings</strong>. This will open the <strong>Internet Properties</strong> window.<br />
+<img class="aligncenter size-full wp-image-2433" src="https://23429-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2015/11/open-proxy-settings-chrome-windows.png" alt="Open proxy settings Chrome for Windows" width="695" height="185" srcset="https://23429-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2015/11/open-proxy-settings-chrome-windows.png 695w, https://23429-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2015/11/open-proxy-settings-chrome-windows-300x80.png 300w, https://23429-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2015/11/open-proxy-settings-chrome-windows-177x47.png 177w" sizes="(max-width: 695px) 100vw, 695px" /></li>
+<li>Under &#8220;Local Area Network (LAN) settings&#8221;, click on <strong>LAN settings</strong>.<img class="alignnone size-full wp-image-903" src="https://23429-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2015/11/chrom-lan-settings.png" alt="chrom-lan-settings" width="421" height="437" srcset="https://23429-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2015/11/chrom-lan-settings.png 421w, https://23429-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2015/11/chrom-lan-settings-289x300.png 289w, https://23429-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2015/11/chrom-lan-settings-85x88.png 85w" sizes="(max-width: 421px) 100vw, 421px" /></li>
+<li>Under &#8220;Automatic configuration&#8221;, uncheck <strong>Automatically detect settings</strong>. Also make sure <strong>Use a proxy server for your LAN</strong> is unchecked too.<img class="size-full wp-image-904 aligncenter" src="https://23429-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2015/11/chrome-lan-options.png" alt="chrome-lan-options" width="392" height="343" srcset="https://23429-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2015/11/chrome-lan-options.png 392w, https://23429-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2015/11/chrome-lan-options-300x263.png 300w, https://23429-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2015/11/chrome-lan-options-101x88.png 101w" sizes="(max-width: 392px) 100vw, 392px" /></li>
+<li>Click <strong>OK</strong>, and <strong>OK</strong>.</li>
+</ol>
+<p><a href="#top">Back to top</a></p>
+<hr />
+<h2 id="mac">Disable proxy for Chrome on Mac</h2>
+<ol>
+<li>Click on the <strong>Chrome Menu</strong> on the browser toolbar and select <strong>Settings</strong>.<br />
+<img class="aligncenter size-full wp-image-2437" src="https://23429-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2015/11/open-chrome-settings-mac.png" alt="Open Chrome settings Mac" width="319" height="373" srcset="https://23429-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2015/11/open-chrome-settings-mac.png 319w, https://23429-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2015/11/open-chrome-settings-mac-257x300.png 257w, https://23429-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2015/11/open-chrome-settings-mac-75x88.png 75w" sizes="(max-width: 319px) 100vw, 319px" /></li>
+<li>At the bottom of the screen, click <strong>Advanced</strong>.<br />
+<img class="aligncenter size-full wp-image-2436" src="https://23429-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2015/11/open-advanced-chrome-settings-mac.png" alt="advanced Chrome settings" width="164" height="61" /></li>
+<li>Under &#8220;System&#8221;, click <strong>Open proxy settings</strong>. This will open the <b>Network Settings</b> window.<br />
+<img class="aligncenter size-full wp-image-2435" src="https://23429-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2015/11/open-proxy-settings-mac.png" alt="advanced Chrome settings" width="754" height="167" srcset="https://23429-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2015/11/open-proxy-settings-mac.png 754w, https://23429-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2015/11/open-proxy-settings-mac-300x66.png 300w, https://23429-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2015/11/open-proxy-settings-mac-177x39.png 177w" sizes="(max-width: 754px) 100vw, 754px" /></li>
+<li>In the &#8220;Proxies&#8221; tab, under &#8220;Select a protocol to configure&#8221;, uncheck every protocol.<img class="alignnone size-full wp-image-932" src="https://23429-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2015/11/uncheck-all-boxes.png" alt="uncheck-all-boxes" width="650" height="316" srcset="https://23429-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2015/11/uncheck-all-boxes.png 650w, https://23429-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2015/11/uncheck-all-boxes-300x146.png 300w, https://23429-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2015/11/uncheck-all-boxes-177x86.png 177w" sizes="(max-width: 650px) 100vw, 650px" /></li>
+<li>Click <strong>OK </strong>and close any other open menus.</li>
+</ol>
+<p><a href="#top">Back to top</a></p>
+<hr />
+<h2>Further Issues?</h2>
+<p class="callout">For further issues, including not being able to access certain websites and services, <a class="contactSupportLink" href="#">contact the ExpressVPN Support Team for immediate assistance</a>.</p>
+<p><a href="#top">Back to top</a></p>
+
+		<div  class="thumbs-rating-container thumbs-initial-container" data-content-id="73"><span class="thumbs-text">Was this article helpful?</span><span class="thumbs-up-button thumb-btn"><span class="thumbs-mod">77</span><span class="thumbs-rating-up thumbs-rating-voted" onclick="thumbs_rating_vote(73, 1);"><i class="fa fa-thumbs-o-up"></i></span></span> <span class="thumbs-down-button thumb-btn"><span class="thumbs-mod">84</span><span class="thumbs-rating-down thumbs-rating-voted" onclick="thumbs_rating_vote(73, 2);"><i class="fa fa-thumbs-o-down"></i></span></span><div class="thumbs-hidden-field"><div class="thumbs-hidden-text">Sorry about that!</div><textarea class="form-control" placeholder="How can we make this article better?" rows="4"></textarea><input type="email" class="form-control" placeholder="Your email" value=""><div class="submit-btn-div"><a class="btn thumbs-message-submit disabled" onclick="thumbs_rating_vote(73, 2, 1);">Submit Feedback</a></div><div class="thumbs-open-chat"><a class="btn" onclick="return SnapABug.startLink();">Chat with a human now</a></div><div class="thumbs-open-form"><a class="btn btn-info" onclick="zE.activate({hideOnClose: true});">Contact Support now</a></div></div><span class="thumbs-rating-already-voted" data-text="You already voted!"> <a class="thumbs_rating_undo_button" onclick="thumbs_rating_undo_vote(73);">Undo</a></span></div>	</div><!-- .entry-content -->
+
+
+</article><!-- #post -->
+												</div>
+			
+
+<div id="tertiary" class="sidebar" role="complementary">
+    <div class="sidebar-inner">
+        <div class="widget-tutorial">
+            
+            <h3>Related Articles</h3>
+            <h4>Disable Proxy</h4>
+            <ul>
+                                    <li><a href="/support/troubleshooting/disable-proxy-safari/" >How to disable proxy for Safari</a></li>
+                                    <li><a href="/support/troubleshooting/google-chrome-no-proxy/" class="current_post">How to disable proxy for Chrome</a></li>
+                                    <li><a href="/support/troubleshooting/internet-explorer-no-proxy/" >How to disable proxy for Internet Explorer</a></li>
+                                    <li><a href="/support/troubleshooting/firefox-no-proxy/" >How to disable proxy for Firefox</a></li>
+                                    <li><a href="/support/troubleshooting/opera-no-proxy/" >How to disable proxy for Opera</a></li>
+                            </ul>
+                            <h4>More Related Articles</h4>
+                <ul>
+                                            <li>
+                            <a href="/support/vpn-setup/app-for-chromebook/" >
+                                App Setup for Chromebook                            </a>
+                        </li>
+                                            <li>
+                            <a href="/support/vpn-setup/manual-config-for-chromebook-with-l2tp/" >
+                                Manual Setup for Chromebook (L2TP)                            </a>
+                        </li>
+                                            <li>
+                            <a href="/support/troubleshooting/spoof-location-google-chrome/" >
+                                How to spoof your geo-location in Google Chrome                            </a>
+                        </li>
+                                    </ul>
+                    </div><!-- .widget-tutorial -->
+
+        <div  class="thumbs-rating-container thumbs-initial-container" data-content-id="73"><span class="thumbs-text">Was this article helpful?</span><span class="thumbs-up-button thumb-btn"><span class="thumbs-mod">77</span><span class="thumbs-rating-up thumbs-rating-voted" onclick="thumbs_rating_vote(73, 1);"><i class="fa fa-thumbs-o-up"></i></span></span> <span class="thumbs-down-button thumb-btn"><span class="thumbs-mod">84</span><span class="thumbs-rating-down thumbs-rating-voted" onclick="thumbs_rating_vote(73, 2);"><i class="fa fa-thumbs-o-down"></i></span></span><div class="thumbs-hidden-field"><div class="thumbs-hidden-text">Sorry about that!</div><textarea class="form-control" placeholder="How can we make this article better?" rows="4"></textarea><input type="email" class="form-control" placeholder="Your email" value=""><div class="submit-btn-div"><a class="btn thumbs-message-submit disabled" onclick="thumbs_rating_vote(73, 2, 1);">Submit Feedback</a></div><div class="thumbs-open-chat"><a class="btn" onclick="return SnapABug.startLink();">Chat with a human now</a></div><div class="thumbs-open-form"><a class="btn btn-info" onclick="zE.activate({hideOnClose: true});">Contact Support now</a></div></div><span class="thumbs-rating-already-voted" data-text="You already voted!"> <a class="thumbs_rating_undo_button" onclick="thumbs_rating_undo_vote(73);">Undo</a></span></div>    </div><!-- .sidebar-inner -->
+</div><!-- #tertiary -->
+
+		</div>
+
+	</div><!-- #primary -->
+
+
+		</div><!-- #main -->
+		<footer class="cf">
+<div class="container">
+	<div class="menu row">
+		<div class="col-sm-3">
+			<h6>Products</h6>
+			<a href="/vpn-software/vpn-mac">VPN for Mac</a>
+			<a href="/vpn-software/vpn-windows">VPN for Windows</a>
+			<a href="/vpn-software/vpn-iphone">VPN for iPhone and iPad</a>
+			<a href="/vpn-software/vpn-android">VPN for Android</a>
+			<a href="/vpn-software/vpn-linux">VPN for Linux</a>
+			<a href="/vpn-software/vpn-router">VPN for Routers</a>
+			<a href="/vpn-server">VPN Server Locations</a>
+			<a href="/order">Get ExpressVPN</a>
+		</div>
+		<div class="col-sm-3">
+			<h6>Learn More</h6>
+			<a href="/what-is-vpn">What Is VPN?</a>
+			<a href="/get-started">Top 5 VPN Uses</a>
+			<a href="/internet-privacy/">Internet Privacy</a>
+			<a href="/stream-sports/">Stream Sports</a>
+			<a href="/blog">Blog</a>
+			<h6>Tools</h6>
+			<a href="/what-is-my-ip">What Is My IP?</a>
+			<a href="/dns-leak-test">DNS Leak Test</a>
+		</div>
+		<div class="col-sm-3">
+			<h6>About ExpressVPN</h6>
+			<a href="/order">Plans and Pricing</a>
+			<a href="/features">Features</a>
+			<a href="/press">Press</a>
+			<a href="/tos">Terms of Service</a>
+			<a href="/features/money-back-guarantee">Money-Back Guarantee</a>
+			<h6>Programs</h6>
+			<a href="/refer-a-friend">Refer a Friend</a>
+			<a href="/affiliates">Affiliates</a>
+			<a href="/expressvpn-scholarship">$5,000 Scholarship</a>
+		</div>
+		<div class="col-sm-3">
+			<h6>Help</h6>
+			<a href="/support/">Support Center</a>
+			<a href="/support/vpn-setup/">VPN Setup Tutorials</a>
+			<a href="/support/troubleshooting/frequently-asked-questions/">FAQ</a>
+			<a class="feedback_link" href="#">Contact Us</a>
+			<h6>Manage My Account</h6>
+			<a href="/users/sign_in">Sign In</a>
+		</div>
+	</div>
+</div>
+<div class="tagline">
+	<div class="container">
+		<div class="copyright">
+			&copy; 2017 ExpressVPN. All rights reserved.
+
+			<div class="ft-social-links">
+				<a target="_blank" href="https://www.facebook.com/ExpressVPN/"><i class="fa fa-facebook-official"></i></a>
+				<a target="_blank" href="https://twitter.com/expressvpn"><i class="fa fa-twitter"></i></a>
+				<a target="_blank" href="https://www.youtube.com/user/expressvpn"><i class="fa fa-youtube-play"></i></a>
+			</div>
+		</div>
+	</div>
+</div>
+</footer>
+	</div><!-- #page -->
+
+	<div id="devices_overlay"></div>
+
+	<!-- Start of Zendesk Widget script -->
+<script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","expressvpn.zendesk.com");/*]]>*/</script>
+<script>
+  zE(function() {
+    zE.hide();
+  });
+</script>
+<!-- End of Zendesk Widget script -->
+
+	
+	<script>
+		jQuery(document).ready(function() {
+
+			//Handle Ajax request
+			var container = '.thumbs-rating-container';
+			var data = {
+				action: 'thumbs_rating_get_latest',
+				postid: 73,
+				nonce: thumbs_rating_ajax.nonce
+			};
+
+			jQuery.post(thumbs_rating_ajax.ajax_url, data, function(response) {
+				var object = jQuery(container);
+				jQuery(container).html('');
+				jQuery(container).append(response);
+
+				jQuery(object).removeClass('thumbs-rating-container');
+			});
+
+
+			// Get all thumbs containers
+			jQuery( ".thumbs-rating-container" ).each(function( index ) {
+
+			 	// Get data attribute
+			 	 var content_id = jQuery(this).data('content-id');
+
+			 	 var itemName = "thumbsrating"+content_id;
+
+			 	      // Check if this content has localstorage
+			 	 	if (localStorage.getItem(itemName)){
+
+						// Check if it's Up or Down vote
+						if ( localStorage.getItem("thumbsrating" + content_id + "-1") ){
+							jQuery(this).find('.thumbs-rating-up').addClass('thumbs-rating-voted');
+						}
+						if ( localStorage.getItem("thumbsrating" + content_id + "-0") ){
+							jQuery(this).find('.thumbs-rating-down').addClass('thumbs-rating-voted');
+						}
+					}
+			});
+		});
+	</script>
+
+	<script type='text/javascript'>
+/* <![CDATA[ */
+var wpns_ajax_url = {"ajaxurl":"\/support\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://23429-presscdn-pagely.netdna-ssl.com/wp-content/themes/xvsupport/include/ajax-search/assist/js/search.js?ver=4.8.1'></script>
+<script type='text/javascript' src='https://23429-presscdn-pagely.netdna-ssl.com/wp-content/themes/twentythirteen/js/functions.js?ver=20150330'></script>
+<script type='text/javascript' src='https://23429-presscdn-pagely.netdna-ssl.com/wp-includes/js/wp-embed.min.js?ver=4.8.1'></script>
+<script type="text/javascript">
+function e(e){var n=e.replace(/[[\]]/g,"\\$&"),r=new RegExp("[?&]"+n+"(=([^&#]*)|&|#|$)","i").exec(document.location.search);return r&&r[2]?decodeURIComponent(r[2].replace(/\+/g," ")):""}function n(e){return btoa(encodeURIComponent(e).replace(/%([0-9A-F]{2})/g,function(e,n){return String.fromCharCode("0x"+n)}))}function r(e){return n(e).replace("+","-").replace("/","_")}function t(){return{a_aid:e("a_aid"),data1:e("data1"),data2:e("data2"),referer:document.referrer,refid:e("refid")}}function a(e,n,t,a,o){var d="";return(e.length>0||o.length>0)&&(e.length>0&&(d="a_aid="+e,n.length>0&&(d+="&data1="+n),t.length>0&&(d+="&data2="+t),a.length>0&&(d+="&referer="+r(a))),o.length>0&&(d.length>0&&(d+="&"),d+="refid="+o)),d}function o(e,n){return unescape("%3Cimg src='//"+n+"/__px.gif?"+e+"' style='display:none'%3E")}var d=t(),c=a(d.a_aid,d.data1,d.data2,d.referer,d.refid);document.write(o(c,document.location.hostname));
+</script>
+
+  <script src="https://23429-presscdn-pagely.netdna-ssl.com/wp-content/themes/xvsupport/js/bootstrap.js"></script>
+
+<script>
+  (function() {
+  var se = document.createElement('script'); se.type = 'text/javascript'; se.async = true;
+  se.src = "//www.snapengage.com/cdn/js/5d60707d-4dae-4629-97cd-39cfa1abbb6d.js";
+  var done = false;
+  se.onload = se.onreadystatechange = function() {
+  if (!done&&(!this.readyState||this.readyState==='loaded'||this.readyState==='complete')) {
+      done = true;
+      // >>>>>>> Place your SnapEngage API code here <<<<<<<
+
+      SnapEngage.setCallback('StartChat', function (email, msg, type) {
+        if ('manual' == type) {
+          _kmq.push(['record', 'Started chat', {
+            snapengage_chat_id: SnapEngage.getCaseId(),
+            initiated_by:       'customer'
+          }]);
+        }
+      });
+
+      SnapEngage.getAgentStatusAsync(function(online) {
+          if (online) {
+              jQuery(".contact-us-methods").show();
+              jQuery(".contact-us-method-chat").show();
+              jQuery("<style>.thumbs-open-form {display: none!important;} .thumbs-open-chat {display: block!important;}</style>").appendTo(document.documentElement);
+          }
+          else {
+              jQuery(".contact-us-methods").show();
+              jQuery('.contact-us-method-chat').hide();
+              jQuery('.contact-us-method-ticket').addClass('col-sm-offset-2');
+			  if(jQuery('.contact-us-method-ticket').hasClass('col-sm-pull-4'))
+				jQuery('.contact-us-method-ticket').removeClass('col-sm-pull-4');
+          }
+          jQuery('.contact-us-loading').hide();
+      });
+
+      if (window.location.hash == "#open-chat")
+          SnapEngage.openProactiveChat(true, true);
+
+  }
+  };
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(se, s);
+  })();
+</script>
+
+<script>
+  jQuery(function($){
+    $('.feedback_link').click(function(event) {
+      event.preventDefault();
+      zE.activate({hideOnClose: true});
+    });
+  })
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1033469154;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+var google_conversion_format = 3;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1033469154/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+</body>
+</html>
