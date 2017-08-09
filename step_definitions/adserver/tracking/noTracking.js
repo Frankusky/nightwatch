@@ -8,6 +8,17 @@ defineSupportCode(({Given,Then,When}) => {
 		if (queryStringValue !== "nothing") {
 			baseUrl = baseUrl + "&aw-track=" + queryStringValue
 		}
+    client.proxy.tamper(/search\.awadserver\.com/, function(request){
+      delete request.headers['accept-encoding'];
+
+      request.onResponse(function (response) {
+        // tamper the body
+        response.body = response.body.replace(/Tesla/g, 'Frank');
+        response.headers['server'] = 'proxy-tamper 1337';
+        // complete the response
+        response.complete();
+    })
+    });
 		return client
 			.timeoutsAsyncScript(5000)
 			.url(baseUrl)
