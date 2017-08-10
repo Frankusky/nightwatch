@@ -1,5 +1,5 @@
 require('nightwatch-cucumber')({
-	cucumberArgs: ['--require', 'timeout.js','--require', 'hooks.js','--require', 'step_definitions', '--format', 'pretty', '--format', 'json:reports/cucumber.json', 'features']
+	cucumberArgs: ['--require', 'timeout.js','--require', 'hooks.js','--require', 'step_definitions', '--format', 'json:reports/cucumber.json', 'features']
 })
 
 var CLI_CONFIGURATION = {
@@ -7,6 +7,7 @@ var CLI_CONFIGURATION = {
 	"webdriver.chrome.driver": "bin/chromedriver.exe",
 	"webdriver.ie.driver": "bin/IEDriverServer.exe",
   "webdriver.firefox.profile" : "Nightwatch" // firefox profile needs to be installed manually, see https://github.com/nightwatchjs/nightwatch/issues/1543#issuecomment-320984137
+  ,"ie.setProxyByServer":true
 }
 var SELENIUM_CONFIGURATION = {
 	start_process: true,
@@ -59,6 +60,7 @@ var CHROME_CONFIGURATION = {
 
 var EDGE_CONFIGURATION = {
 	desiredCapabilities: {
+    "ie.usePerProcessProxy":true,
 		browserName: 'internet explorer',
     proxy_port:6969,//just to pass the port of the proxy so iwhen the tests executes the proxy will know which proxy has to run in order to prevent conflicts proxy 
     "proxy": {

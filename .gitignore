@@ -1,4 +1,4 @@
 /node_modules
 /tests_output
 /selenium-debug.log
-/reports/cucumber.json
+/reports/*

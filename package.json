@@ -10,9 +10,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cucumber": "^2.3.1",
+    "cucumber": "^3.0.0",
+    "cucumber-html-reporter": "^2.0.3",
     "nightwatch": "^0.9.16",
     "nightwatch-cucumber": "^7.1.11",
+    "nightwatch-html-reporter": "^2.0.2",
     "proxy-tamper": "git+https://github.com/tsyd/proxy-tamper.git"
   },
   "dependencies": {}
