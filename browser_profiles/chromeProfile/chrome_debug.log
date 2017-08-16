@@ -1,2 +1,3 @@
-[21876:9120:0808/083521.224:INFO:easy_unlock_service_regular.cc(446)] Initializing EasyUnlockService inside the user session.
-[21876:5452:0808/083521.246:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+[10804:5188:0808/154648.303:ERROR:browser_theme_pack.cc(624)] Failed to load theme data pack.
+[10804:5188:0808/154648.968:INFO:easy_unlock_service_regular.cc(446)] Initializing EasyUnlockService inside the user session.
+[10804:5188:0808/154650.198:INFO:CONSOLE(9)] "SW registered", source: https://www.google.com.gt/_/chrome/newtab?espv=2&ie=UTF-8 (9)

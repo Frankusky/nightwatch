@@ -1,5 +1,5 @@
 require('nightwatch-cucumber')({
-	cucumberArgs: ['--require', 'timeout.js','--require', 'hooks.js','--require', 'step_definitions', '--format', 'json:reports/cucumber.json', 'features']
+	cucumberArgs: ['--require', 'hooks.js','--require', 'step_definitions', '--format', 'json:reports/cucumber-{browser}.json', 'features']
 })
 
 var CLI_CONFIGURATION = {
@@ -13,13 +13,13 @@ var SELENIUM_CONFIGURATION = {
 	start_process: true,
 	server_path: 'bin/selenium-server-standalone-3.4.0.jar',
 	host: '127.0.0.1',
-	port: 4444,
+	port: {seleniumPort},
 	cli_args: CLI_CONFIGURATION
 };
 
 var DEFAULT_CONFIGURATION = {
   launch_url: 'data:,',
-  selenium_port: 4444,
+  selenium_port: {seleniumPort},
   selenium_host: 'localhost',
   desiredCapabilities: {
     browserName: 'chrome',
@@ -31,7 +31,7 @@ var DEFAULT_CONFIGURATION = {
 var FIREFOX_CONFIGURATION = {
   "desiredCapabilities": {
     "browserName": "firefox",
-    proxy_port:8080 //just to pass the port of the proxy so when the tests executes the proxy will know which proxy has to run in order to prevent conflicts proxy, this value is set in the firefox profile
+    proxy_port:4562 //just to pass the port of the proxy so when the tests executes the proxy will know which proxy has to run in order to prevent conflicts proxy, this value is set in the firefox profile
 //    "moz:firefoxOptions": { 
     // the following options doesnt works
 //      "profile": "YmluL2ZpcmVmb3g=",
@@ -58,7 +58,7 @@ var CHROME_CONFIGURATION = {
 	}
 };
 
-var EDGE_CONFIGURATION = {
+var IE_CONFIGURATION = {
 	desiredCapabilities: {
     "ie.usePerProcessProxy":true,
 		browserName: 'internet explorer',
@@ -74,7 +74,7 @@ var ENVIRONMENTS = {
   default: DEFAULT_CONFIGURATION,
 	chrome: CHROME_CONFIGURATION,
 	firefox: FIREFOX_CONFIGURATION,
-	edge: EDGE_CONFIGURATION
+  "internet explorer": IE_CONFIGURATION
 };
 
 module.exports = {

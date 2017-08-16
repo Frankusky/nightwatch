@@ -2,3 +2,6 @@
 /tests_output
 /selenium-debug.log
 /reports/*
+/nightwatch.conf_chrome.js
+/nightwatch.conf_firefox.js
+/nightwatch.conf_ie.js

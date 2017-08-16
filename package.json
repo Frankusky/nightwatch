@@ -10,12 +10,19 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cucumber": "^3.0.0",
+    "cucumber": "^2.3.1",
     "cucumber-html-reporter": "^2.0.3",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-nightwatch": "^0.3.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.6.1",
+    "gulp-sync": "^0.1.4",
     "nightwatch": "^0.9.16",
     "nightwatch-cucumber": "^7.1.11",
     "nightwatch-html-reporter": "^2.0.2",
-    "proxy-tamper": "git+https://github.com/tsyd/proxy-tamper.git"
+    "proxy-tamper": "git+https://github.com/tsyd/proxy-tamper.git",
+    "random-port": "^0.1.0"
   },
   "dependencies": {}
 }

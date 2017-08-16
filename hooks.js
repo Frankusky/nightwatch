@@ -2,26 +2,19 @@ const {defineSupportCode} = require('cucumber');
 const {client} = require('nightwatch-cucumber');
 var proxy = require("proxy-tamper")
 var fs = require("fs");
-defineSupportCode(function({After, Before, AfterAll}) {
+defineSupportCode(function({After, Before,setDefaultTimeout}) {
 	Before(function () {
     var proxyPort = client.options.desiredCapabilities.proxy_port;
-    client.proxy = proxy.start({port:proxyPort});
+    if(proxyPort!==undefined){
+      client.proxy = proxy.start({port:proxyPort});
+    }
 		return client.init();
 	});
 	After(function () {
-    client.proxy.end();
+    if(client.proxy!== undefined){
+      client.proxy.end();
+    }
 		return client.end();
 	});
-  AfterAll(function(callback){
-    var reporter = require('cucumber-html-reporter');
-    var options = {
-      theme: 'bootstrap',
-      jsonFile: 'reports/cucumber.json',
-      output: 'reports/html/cucumberReport.html',
-      reportSuiteAsScenarios: false,
-      launchReport: false
-    };
-    reporter.generate(options);
-    callback();
-  })
+  setDefaultTimeout(30*1000);
 });
